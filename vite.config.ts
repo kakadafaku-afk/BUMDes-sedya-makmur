@@ -4,6 +4,7 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/BUMDes-sedya-makmur/',
   plugins: [
     react(),
     tailwindcss(),
