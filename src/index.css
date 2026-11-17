@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ── Token Warna Brand BUMDes Sedya Makmur ──────────────────
+   Gunakan class: bg-brand-cokelat, text-brand-terakota, dll.
+   ─────────────────────────────────────────────────────────── */
+@theme {
+  --color-brand-cokelat:    #4A2C17;
+  --color-brand-terakota:   #B5532F;
+  --color-brand-krem:       #FBF1E1;
+  --color-brand-krem-gelap: #EEE0C8;
+  --color-brand-hijau:      #1E9E6A;
+  --color-brand-hijau-gelap:#166e4b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Utility kustom: animasi hitung naik stats */
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-count-up {
+  animation: countUp 0.6s ease-out forwards;
+}
